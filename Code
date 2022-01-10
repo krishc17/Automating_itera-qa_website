@@ -1,0 +1,12 @@
+*** Settings ***
+Library      SeleniumLibrary
+*** Test Cases ***
+LoginTest
+       Open Browser    https://itera-qa.azurewebsites.net/home/automation  Firefox
+       Input Text      id:name      krishna
+       Input Text      id:phone     888888888
+       Input Text      id:email     krishna@gmail.com
+       Input Text      id:password     password
+       Input Text      id:address     1234
+
+       click button   xpath://button[@name="submit"]
